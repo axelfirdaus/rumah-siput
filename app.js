@@ -14,7 +14,6 @@ sendBtn.addEventListener('click', function() {
 })
 
 document.querySelector('#message-container').addEventListener('keypress', function (e) {
-    console.log(e)
     if (e.key === 'Enter') {
         textToImage();
     }

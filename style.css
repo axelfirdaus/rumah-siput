@@ -18,8 +18,8 @@
 }
 
 @font-face {
-    font-family: "isl";
-    src: url("./assets/fonts/IndianSignLangage.ttf");
+    font-family: "sign";
+    src: url("./assets/Handsignest-rwny.ttf");
 }
 
 * {
@@ -76,8 +76,8 @@ h1 {
     align-items: center;
     /* padding: 15px; */
     /* margin-top: 3rem; */
-    font-family: 'isl';
-    font-size: 8rem;
+    font-family: 'sign';
+    font-size: 7rem;
 }
 
 .player-view span {
@@ -207,3 +207,9 @@ h1 {
     text-align: center;
     margin: 0 10px;
 }
+
+@media only screen and (max-width: 480px) {
+    #text-area {
+        height: 5rem;
+    }
+  }
