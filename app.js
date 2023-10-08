@@ -1,13 +1,13 @@
 const signText = document.querySelector('.player-view')
 const normText = document.querySelector('#player-text')
 
-const textArea = document.querySelector('#text-area')
+const textArea = document.querySelector('#text-area');
 
 const msgInput = document.querySelector('.message-input')
 const sendBtn = document.querySelector('#send-btn')
 const container = document.getElementById("container");
 
-msgInput.value = '';
+// msgInput.value = '';
 let letters = [];
 sendBtn.addEventListener('click', function() {
     textToImage();

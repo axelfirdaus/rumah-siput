@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rumah Siput</title>
+    <title>Rumah Siput - Text to Image</title>
 
     <!-- required -->
     <link rel="icon" type="image/png" href="./assets/images/rumah-siput-logo-pw.png">
@@ -58,19 +58,34 @@
     <body>
         <!-- loader -->
         <img src="./assets/images/rumah-siput-logo-pw.png" id="loader" class="center" alt="loader" srcset="">
-        <div class="logo">
-            <img src="./assets/images/rumah-siput-logo-pw.png" class="image-logo" alt="loader" srcset="">
-            <div class="title">Rumah Siput</div>
-            <div class="description">This is description</div>
+        <!-- heading -->
+        <h1 class="h1-title">Rumah Siput</h1>
+        <!-- back-btn -->
+        <a href="index.html"><img src="./assets/images/rumah-siput-logo-pw.png" id="back-btn" class="nav-btn" alt="back"></a>
+        <!-- player view -->
+        <div class="wrapper" id="container">
+            <!-- <div class="players">
+                <div class="player-view">H</div>
+                <p id="player-text">H</p>
+            </div> -->
         </div>
+        <!-- reader -->
+        <textarea name="text" id="text-area" cols="30" rows="10"></textarea>
+        <!-- quick-controls -->
+        <!-- <div class="quick-controls">
+            <span class="material-symbols-rounded quick-btns" id="prev-btn">skip_previous</span>
+            <span class="material-symbols-rounded quick-btns" id="prev-btn">pause</span>
+            <span class="material-symbols-rounded quick-btns" id="prev-btn">skip_next</span>
+        </div> -->
+        <!-- message box -->
+        <div class="message-container" id="message-container">
+            <input type="text" class="message-input" id="message" name="message" placeholder="Type your message here">
+            <button class="send-btn" id="send-btn"><span class="material-symbols-rounded">send</span></button>
+        </div>
+        
 
-        <div class="menus">
-            <a href="text-to-image.html" class="menu">Translate Sign Language</a>
-            <a href="index-sign-language.html" class="menu">Index Sign Language</a>
-        </div>
+        <script src="app.js"></script>
 
-        <div class="footer">
-            Owned by <a href="">Rumah Siput</a>
-        </div>
     </body>
+
 </html>

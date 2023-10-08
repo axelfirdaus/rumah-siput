@@ -54,7 +54,10 @@ h1 {
     color: var(--navyBlue);
     font-family: "Poppins";
     font-size: 2rem;
+
 }
+
+
 
 .wrapper {
     margin-top: 4.5rem;
@@ -208,6 +211,90 @@ h1 {
     margin: 0 10px;
 }
 
+.logo {
+    text-align: center;
+    margin-top: 50px;
+}
+.image-logo {
+    height: 80px;
+}
+
+.title {
+    font-size: 21px;
+}
+
+.description {
+    width: 500px;
+    font-size: 14px;
+}
+
+.menus {
+    margin-top: 40px;
+    display: flex;
+    width: 500px;
+    gap: 40px;
+}
+
+.menu {
+    padding: 40px 40px;
+    background: white;
+    border: 1px solid #193053;
+    transition: 0.5s;
+    cursor: pointer;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.menu:hover {
+    box-shadow: 1px 2px #193053;
+}
+
+a:hover {
+    color: black;
+}
+
+.footer {
+    position: absolute;
+    bottom: 20px;
+}
+
+.menus a {
+    text-decoration: none;
+    color: #222;
+}
+
+.list-numbers {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    margin-top: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.numbers {
+    margin-top: 100px;
+    width: 100%;
+    text-align: center;
+    font-family: 'sign';
+}
+
+.sign {
+    font-family: 'sign';
+    margin-bottom: 6px;
+    margin-top: 10px;
+    font-size: 6rem;
+}
+
+.alphabet {
+    margin-top: 50px;
+    width: 100%;
+    text-align: center;
+    font-family: 'sign';
+}
+
 @media only screen and (max-width: 480px) {
     #text-area {
         height: 5rem;
@@ -224,4 +311,30 @@ h1 {
     .player-text {
         font-size: 1.5rem;
     }
-  }
+
+    .menus {
+        width: calc(100% - 60px);
+        gap: 10px;
+        margin-right: 20px;
+    }
+
+    .menu {
+        width: calc(50% - 5px);
+    }
+
+    .description {
+        width: calc(100% - 40px);
+        padding: 0 20px;
+    }
+
+    .h1-title {
+        margin-left: 0;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        margin-left: 60px;
+        margin-top: 16px;
+    }
+}
+
