@@ -212,4 +212,16 @@ h1 {
     #text-area {
         height: 5rem;
     }
+
+    .wrapper {
+        height: 21rem;
+    }
+
+    .player-view {
+        font-size: 4rem;
+    }
+
+    .player-text {
+        font-size: 1.5rem;
+    }
   }
