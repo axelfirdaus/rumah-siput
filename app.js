@@ -5,12 +5,27 @@ const textArea = document.querySelector('#text-area');
 
 const msgInput = document.querySelector('.message-input')
 const sendBtn = document.querySelector('#send-btn')
+const intBtn = document.querySelector('#international')
+const bahasaBtn = document.querySelector('#indonesia')
 const container = document.getElementById("container");
 
 // msgInput.value = '';
+let language = 'international';
 let letters = [];
 sendBtn.addEventListener('click', function() {
     textToImage();
+})
+
+intBtn.addEventListener('click', function() {
+    language = 'international'
+    intBtn.classList.add("active");
+    bahasaBtn.classList.remove("active");
+})
+
+bahasaBtn.addEventListener('click', function() {
+    language = 'indonesia';
+    intBtn.classList.remove("active");
+    bahasaBtn.classList.add("active");
 })
 
 document.querySelector('#message-container').addEventListener('keypress', function (e) {
@@ -38,7 +53,11 @@ function textToImage(){
             playerView.textContent = text[i];
             playerText.textContent = text[i];
             players.classList.add("players");
-            playerView.classList.add("player-view");
+            if(language === 'international'){
+                playerView.classList.add("player-view");
+            }else{
+                playerView.classList.add("player-view-indonesia");
+            }
             playerText.classList.add("player-text");
         
             players.appendChild(playerView);

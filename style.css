@@ -22,6 +22,11 @@
     src: url("./assets/Handsignest-rwny.ttf");
 }
 
+@font-face {
+    font-family: "sign-indonesia";
+    src: url("./assets/fonts/BkBisindo-Regular.ttf");
+}
+
 * {
     font-family: 'Poppins', sans-serif;
     padding: 0;
@@ -58,9 +63,8 @@ h1 {
 }
 
 
-
 .wrapper {
-    margin-top: 4.5rem;
+    margin-top: 1.5rem;
     padding-top: 2rem;
     display: flex;
     background-color: white;
@@ -80,6 +84,16 @@ h1 {
     /* padding: 15px; */
     /* margin-top: 3rem; */
     font-family: 'sign';
+    font-size: 7rem;
+}
+
+.player-view-indonesia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* padding: 15px; */
+    /* margin-top: 3rem; */
+    font-family: 'sign-indonesia';
     font-size: 7rem;
 }
 
@@ -295,6 +309,34 @@ a:hover {
     font-family: 'sign';
 }
 
+.wrapper-languange {
+    display: flex;
+    width: 500px;
+    justify-content: space-between;
+    gap: 50px;
+    align-items: center;
+}
+
+.h1-title {
+    position: relative !important;
+}
+
+#international, #indonesia {
+    cursor: pointer;
+    margin: 0px 6px;
+}
+
+.switch-languange {
+    display: flex;
+    position: absolute;
+    right: 8%;
+    top: 20px;
+}
+
+.active {
+    color: white;
+}
+
 @media only screen and (max-width: 480px) {
     #text-area {
         height: 5rem;
@@ -329,6 +371,10 @@ a:hover {
 
     .h1-title {
         margin-left: 0;
+        width: 100%;
+        text-align: center;
+        margin-top: 74px;
+        position: relative !important;
     }
 
     h1 {
