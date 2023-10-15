@@ -34,6 +34,8 @@ document.querySelector('#message-container').addEventListener('keypress', functi
     }
 });
 
+const reg = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0'];
+
 
 function textToImage(){
     // textArea.value = ''
@@ -56,7 +58,11 @@ function textToImage(){
             if(language === 'international'){
                 playerView.classList.add("player-view");
             }else{
-                playerView.classList.add("player-view-indonesia");
+                if(reg.includes(text[i])){
+                    playerView.classList.add("player-view");
+                }else{
+                    playerView.classList.add("player-view-indonesia");
+                }
             }
             playerText.classList.add("player-text");
         
