@@ -302,12 +302,23 @@ a:hover {
     font-size: 6rem;
 }
 
-.alphabet {
+.sign-indonesia {
+    font-family: 'sign-indonesia';
+    margin-bottom: 6px;
+    margin-top: 10px;
+    font-size: 6rem;
+}
+
+.alphabet, .alphabet-indonesia {
     margin-top: 50px;
     width: 100%;
     text-align: center;
     font-family: 'sign';
 }
+.alphabet-indonesia {
+    font-family: 'sign-indonesia' !important;
+}
+
 
 .wrapper-languange {
     display: flex;
@@ -335,6 +346,11 @@ a:hover {
 
 .active {
     color: white;
+}
+
+.divider {
+    height: 40px;
+    width: 100%;
 }
 
 @media only screen and (max-width: 480px) {

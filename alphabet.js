@@ -1,5 +1,6 @@
 const listNumber = document.querySelector('#list-number');
 const listAlphabet = document.querySelector('#list-alphabet');
+const listAlphabetIndonesia = document.querySelector('#list-alphabet-indonesia');
 
 const alphabet = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
 
@@ -33,4 +34,20 @@ for(let a = 0; a < alphabet.length; a++){
     wrapper.appendChild(alphabetDiv)
     wrapper.appendChild(alphabetRealDiv)
     listAlphabet.appendChild(wrapper)
+    // listAlphabetIndonesia.appendChild(wrapper)
+}
+
+for(let a = 0; a < alphabet.length; a++){
+    const alphabetDiv = document.createElement("div");
+    const alphabetRealDiv = document.createElement("div");
+    const wrapper = document.createElement("div");
+    alphabetDiv.classList.add("sign-indonesia");
+
+    alphabetDiv.textContent = alphabet[a];
+    alphabetRealDiv.textContent = alphabet[a];
+
+    wrapper.appendChild(alphabetDiv)
+    wrapper.appendChild(alphabetRealDiv)
+    // listAlphabet.appendChild(wrapper)
+    listAlphabetIndonesia.appendChild(wrapper)
 }
